@@ -22,3 +22,11 @@ def get_image_cards():
   for row in app_tables.images.search():
     card_data.append({'name': row['name'], 'card-img': row['external-url']})
   return card_data
+
+@anvil.server.callable
+def get_image_categories():
+  category_list = []
+  for row in app_tables.categories.search():
+      category_list.append((row["name"], row))
+
+  return category_list

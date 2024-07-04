@@ -12,3 +12,4 @@ class edit_imageAsset(edit_imageAssetTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+    self.drop_down_category.items = anvil.server.call('get_image_categories')
