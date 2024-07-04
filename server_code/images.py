@@ -20,5 +20,5 @@ import anvil.server
 def get_image_cards():
   card_data = []
   for row in app_tables.images.search():
-    card_data.append({'name': row['name']})
+    card_data.append({'name': row['name'], 'card-img': row['external-url']})
   return card_data

@@ -1,11 +1,14 @@
 unique_ids:
   forms:
+    edit_imageAsset: '1720097327163411920922037.97894'
+    edit_imagePost: '1720098016374140434654472.7635'
     view_imageAssets: '1720085481855416718777118.20325'
     view_imageAssets.item: '1720085692121290031685358.9673'
   modules: {}
   server_modules:
     images: '1720089381691700100678274.7363'
   assets:
+    speech-bubble.js: '1720098164039727044352261.9403'
     standard-page.html: KFULKW5B224HLOQ4H5X73BNTBQLC2XY3
     theme.css: 6BK2ASXMUAXIRNJQV7FQP54QT6CHYSAK
   scripts: {}

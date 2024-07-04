@@ -12,3 +12,7 @@ class view_imageAssets(view_imageAssetsTemplate):
     self.init_components(**properties)
 
     self.repeating_panel_1.items = anvil.server.call('get_image_cards')
+
+  def outlined_button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
