@@ -1,8 +1,49 @@
 allow_embedding: false
-package_name: M3_App_1
-name: M3 App 1
-startup_form: Form1
+package_name: Social_Media_Image_Posts
+name: Social Media Image Posts
+startup_form: null
 renamed: true
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox, server_spec: null}
 dependencies: []
-services: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+metadata: {title: Social Media Image Posts}
+db_schema:
+  images:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: category
+      admin_ui: {order: 1, width: 200}
+      type: link_single
+      target: categories
+    - name: image
+      admin_ui: {order: 2, width: 200}
+      type: media
+    - name: external-url
+      admin_ui: {width: 200, order: 6}
+      type: string
+    - name: crop-landscape
+      admin_ui: {width: 200, order: 7}
+      type: simpleObject
+    - name: crop-portrait
+      admin_ui: {width: 200, order: 8}
+      type: simpleObject
+    - name: crop-square
+      admin_ui: {width: 200, order: 9}
+      type: simpleObject
+    title: images
+  categories:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    title: categories
+startup: {type: form, module: view_imageAssets}

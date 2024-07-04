@@ -1,0 +1,11 @@
+is_package: true
+container: {type: ColumnPanel}
+components:
+- name: label_subject
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'LDVHKD,ZOJUPS'}
+- name: label_from
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'OUYLYR,XIJKSM'}
